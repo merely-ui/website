@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">🪶Lightweight Components for React Apps</h1>
+<br/>
 
-## Getting Started
+<p align="center">
+  <img alt="Bundle Size" src="https://badgen.net/bundlephobia/minzip/@merely-ui/react"/>
+  <a href="https://github.com/merely-ui/merely-ui/blob/main/LICENSE">
+    <img alt="MIT License" src="https://badgen.net/github/license/merely-ui/merely-ui"/>
+  </a>
+</p>
 
-First, run the development server:
+<br/>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Documentation
+
+Website for documentation is under development and will be ready soon ^\_^
+
+## Features
+
+- Styling Props: Merely UI provides a set of styling props that make it easy to style your components directly in JSX.
+- Bundle-Friendly: Merely UI bundle size is really small and amounts to 3.3kb at minzipped variant.
+- Color Mode Switch: Merely UI has easy color mode switching out-of-the-box and all components are compatible with Light and Dark mode.
+- Accessible. Merely UI components follow the WAI-ARIA guidelines specifications.
+
+## Installation
+
+```sh
+# with Yarn
+$ yarn add @merely-ui/react
+
+# with npm
+$ npm i @merely-ui/react
+
+# with pnpm
+$ pnpm add @merely-ui/react
+
+# with Bun
+$ bun add @merely-ui/react
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Before using the components, please do this:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Wrap your application with the `MerelyProvider` provided by
+   **@merely-ui/react**.
 
-## Learn More
+```jsx
+...
+import { MerelyProvider } from "@merely-ui/react"
 
-To learn more about Next.js, take a look at the following resources:
+// Do this at the root of your application
+ReactDOM.createRoot(document.getElementById('root')!).render(
+ <StrictMode>
+   <MerelyProvider>
+     <App />
+   </MerelyProvider>
+ </StrictMode>
+)
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Use Merely UI components:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```jsx
+import { Button } from '@merely-ui/react'
 
-## Deploy on Vercel
+function App() {
+	return <Button>Click me!</Button>
+}
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+MIT
