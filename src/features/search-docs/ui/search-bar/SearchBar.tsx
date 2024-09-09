@@ -9,7 +9,7 @@ export default function SearchBar() {
 			border={`1px solid ${colors.gray.$700}`}
 			px={20}
 			py={12}
-			color={colors.gray.$600}
+			color={colors.gray.$500}
 			display='flex'
 			justifyContent='space-between'
 			alignItems='center'

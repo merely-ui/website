@@ -1,11 +1,14 @@
 'use client'
 
-import { useColorTheme } from '@merely-ui/react'
+import { useColorMode } from '@merely-ui/react'
 import { memo, useMemo } from 'react'
 
 function Logo() {
-	const { theme } = useColorTheme()
-	const fill = useMemo(() => (theme === 'dark' ? 'white' : 'black'), [])
+	const { colorMode } = useColorMode()
+	const fill = useMemo(
+		() => (colorMode === 'dark' ? 'white' : 'black'),
+		[colorMode]
+	)
 
 	return (
 		<svg

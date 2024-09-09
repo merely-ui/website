@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@merely-ui/react": "^1.0.3",
+    "@merely-ui/react": "^1.0.4",
     "next": "14.2.7",
     "react": "^18",
     "react-dom": "^18"

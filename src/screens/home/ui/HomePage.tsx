@@ -47,6 +47,9 @@ export default function HomePage() {
 							_hover={{
 								bgColor: colors.gray.$700,
 							}}
+							_light={{
+								bgColor: colors.gray.$300,
+							}}
 						>
 							<Image src={GithubIcon} alt='Github icon' />
 							<span>GitHub</span>

@@ -1,15 +1,19 @@
 'use client'
 
-import { Select, SelectItem, useColorTheme } from '@merely-ui/react'
+import { Select, SelectItem, useColorMode } from '@merely-ui/react'
 import { memo } from 'react'
 
 function ToggleTheme() {
-	const { theme } = useColorTheme()
+	const { colorMode, setColorMode } = useColorMode()
 
 	return (
-		<Select minW={110}>
-			<SelectItem selected={theme === 'dark'}>Dark</SelectItem>
-			<SelectItem selected={theme === 'light'}>Light</SelectItem>
+		<Select onChange={value => setColorMode(value)} minW={110}>
+			<SelectItem value='dark' selected={colorMode === 'dark'}>
+				Dark
+			</SelectItem>
+			<SelectItem value='light' selected={colorMode === 'light'}>
+				Light
+			</SelectItem>
 		</Select>
 	)
 }
