@@ -5,7 +5,13 @@ import Image from 'next/image'
 export default function HomePage() {
 	return (
 		<main>
-			<Flex flexDir='column' alignItems='center' gap={30} mt={150}>
+			<Flex
+				flexDir='column'
+				justifyContent='center'
+				alignItems='center'
+				h={'40rem'}
+				gap={30}
+			>
 				<Title as={'h1'} size='3xl' fontSize={64}>
 					<span className='gradient-purple'>Fast </span>
 					<span className='gradient-silver'>to write, </span>

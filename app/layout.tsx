@@ -1,11 +1,9 @@
 import { Providers } from '@/src/app/Providers'
 import Container from '@/src/shared/ui/Container'
+import { Footer } from '@/src/widgets/footer'
 import { Header } from '@/src/widgets/header'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title:
@@ -30,11 +28,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={inter.className}>
+			<body>
 				<Providers>
 					<Container>
 						<Header />
 						{children}
+						<Footer />
 					</Container>
 				</Providers>
 			</body>
