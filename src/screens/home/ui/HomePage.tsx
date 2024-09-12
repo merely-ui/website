@@ -1,4 +1,5 @@
 import GithubIcon from '@/src/shared/assets/github.svg'
+import { Features } from '@/src/widgets/features'
 import { Button, colors, Flex, Text, Title } from '@merely-ui/react'
 import Image from 'next/image'
 
@@ -10,6 +11,7 @@ export default function HomePage() {
 				justifyContent='center'
 				alignItems='center'
 				h={'40rem'}
+				mb={'10rem'}
 				gap={30}
 			>
 				<Title as={'h1'} size='3xl' fontSize={64}>
@@ -63,6 +65,7 @@ export default function HomePage() {
 					</a>
 				</Flex>
 			</Flex>
+			<Features />
 		</main>
 	)
 }
