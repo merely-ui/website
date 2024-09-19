@@ -1,12 +1,16 @@
-import { Button, colors, Flex, Template } from '@merely-ui/react'
+'use client'
 
-export default function SearchBar() {
+import { Button, colors, Flex, Template, useColorMode } from '@merely-ui/react'
+import { memo } from 'react'
+
+function SearchBar() {
+	const { colorMode } = useColorMode()
+
 	return (
 		<Button
 			variant='clear'
 			w={560}
 			h={34}
-			border={`1px solid ${colors.gray.$700}`}
 			px={20}
 			py={12}
 			color={colors.gray.$500}
@@ -16,7 +20,13 @@ export default function SearchBar() {
 			fontSize={18}
 			borderRadius={10}
 			_hover={{
-				bgColor: colors.gray.$900,
+				bgColor: colorMode === 'dark' ? colors.gray.$900 : '#EEE',
+			}}
+			_light={{
+				border: `1px solid ${colors.gray.$200}`,
+			}}
+			_dark={{
+				border: `1px solid ${colors.gray.$700}`,
 			}}
 		>
 			<span>Search documentation</span>
@@ -45,3 +55,5 @@ export default function SearchBar() {
 		</Button>
 	)
 }
+
+export default memo(SearchBar)
