@@ -2,6 +2,7 @@ import GithubIcon from '@/src/shared/assets/github.svg'
 import { Features } from '@/src/widgets/features'
 import { Button, colors, Flex, Text, Title } from '@merely-ui/react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function HomePage() {
 	return (
@@ -31,16 +32,18 @@ export default function HomePage() {
 					React apps
 				</Text>
 				<Flex mt={40}>
-					<Button
-						_size='xl'
-						px={35}
-						py={10}
-						h={50}
-						alignItems='center'
-						borderRadius={10}
-					>
-						Get started
-					</Button>
+					<Link href={'/getting-started'}>
+						<Button
+							_size='xl'
+							px={35}
+							py={10}
+							h={50}
+							alignItems='center'
+							borderRadius={10}
+						>
+							Get started
+						</Button>
+					</Link>
 					<a href='https://github.com/merely-ui/merely-ui'>
 						<Button
 							_size='xl'
