@@ -8,3 +8,15 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
    </MerelyProvider>
  </StrictMode>
 )`
+
+export const InstallationCode = `# with Yarn
+$ yarn add @merely-ui/react
+
+# with npm
+$ npm i @merely-ui/react
+
+# with pnpm
+$ pnpm add @merely-ui/react
+
+# with Bun
+$ bun add @merely-ui/react`
