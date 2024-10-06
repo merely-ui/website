@@ -9,15 +9,15 @@ function SearchBar() {
 	return (
 		<Button
 			variant='clear'
-			w={560}
-			h={34}
-			px={20}
-			py={12}
+			w={572}
+			h={24}
+			px={18}
+			py={10}
 			color={colors.gray.$500}
 			display='flex'
 			justifyContent='space-between'
 			alignItems='center'
-			fontSize={18}
+			fontSize={16}
 			borderRadius={10}
 			_hover={{
 				bgColor: colorMode === 'dark' ? colors.gray.$900 : '#EEE',
