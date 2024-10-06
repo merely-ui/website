@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	--shiki-foreground: #eeeeee;
+	--shiki-background: #0a0a0a;
+	--shiki-token-constant: #52a4f7;
+	--shiki-token-string: hsla(131, 43%, 57%, 1);
+	--shiki-token-comment: hsla(0, 0%, 63%, 1);
+	--shiki-token-keyword: hsla(341, 90%, 67%, 1);
+	--shiki-token-parameter: hsla(39, 90%, 50%, 1);
+	--shiki-token-function: hsla(275, 80%, 71%, 1);
+	--shiki-token-string-expression: hsla(131, 43%, 57%, 1);
+	--shiki-token-punctuation: hsla(0, 0%, 93%, 1);
+	--shiki-token-link: hsla(131, 43%, 57%, 1);
+}
+
 @layer utilities {
 	.text-balance {
 		text-wrap: balance;
@@ -23,5 +37,12 @@
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+	}
+	.code {
+		> pre {
+			padding: 20px;
+			border-radius: 5px;
+			font-size: 15px;
+		}
 	}
 }
