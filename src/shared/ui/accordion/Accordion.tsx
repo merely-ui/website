@@ -24,7 +24,7 @@ export const Accordion: FC<AccordionProps> = ({
 			className={cn(styles.accordion, className)}
 		>
 			<div className={styles.top}>
-				<Text className='select-none'>{label}</Text>
+				<Text fontWeight={500}>{label}</Text>
 				<Arrow
 					className={cn(styles.arrow, {
 						[styles.arrowOpen]: isOpen,

@@ -7,7 +7,17 @@ function ToggleTheme() {
 	const { colorMode, setColorMode } = useColorMode()
 
 	return (
-		<Select onChange={value => setColorMode(value)} minW={110}>
+		<Select
+			onChange={value => setColorMode(value)}
+			minW={90}
+			buttonProps={{
+				maxH: 36,
+				fontSize: 14,
+			}}
+			listProps={{
+				fontSize: 14,
+			}}
+		>
 			<SelectItem value='dark' selected={colorMode === 'dark'}>
 				Dark
 			</SelectItem>

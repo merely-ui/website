@@ -13,5 +13,7 @@ export const shikiHighlight = async (code: string, lang: ShikiLang) => {
 		theme: 'css-variables',
 	})
 
+	highlighter.dispose()
+
 	return out
 }
