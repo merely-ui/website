@@ -3,15 +3,33 @@ interface PageLink {
 	text: string
 }
 
-export const pageLinks: PageLink[] = [
+export const gettingStartedLinks: PageLink[] = [
 	{
-		text: 'Getting Started',
+		text: 'Installation',
 		link: '/getting-started',
 	},
-	// {
-	// 	text: 'Contributing',
-	// 	link: '/contributing',
-	// },
+	{
+		text: 'Design philosophy',
+		link: '/design-philosophy',
+	},
+]
+
+export const frameworksLinks: PageLink[] = [
+	{
+		text: 'Vite',
+		link: '/vite',
+	},
+	{
+		text: 'Next.js',
+		link: '/nextjs',
+	},
+]
+
+export const themeLinks: PageLink[] = [
+	{
+		text: 'Styling Props',
+		link: '/styling-props',
+	},
 	{
 		text: 'Color Mode',
 		link: '/color-mode',
@@ -21,13 +39,12 @@ export const pageLinks: PageLink[] = [
 		link: '/color-palette',
 	},
 	{
-		text: 'Custom theme',
-		link: '/custom-theme',
+		text: 'Theme editing',
+		link: '/theme-editing',
 	},
-	{
-		text: 'Frameworks guide',
-		link: '/frameworks',
-	},
+]
+
+export const usageLinks: PageLink[] = [
 	{
 		text: 'Components',
 		link: '/components',

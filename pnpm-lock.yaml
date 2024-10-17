@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@merely-ui/react':
-        specifier: ^1.0.7
-        version: 1.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^1.1.9
+        version: 1.1.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next:
         specifier: 14.2.5
         version: 14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -183,8 +183,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@merely-ui/react@1.0.7':
-    resolution: {integrity: sha512-WSnWDSS+qIFeyAB1pGSG7q3sjKKooXfE5EHUKNOar8gC/8iCLsIWYihBoj1aKIcBv2VJW2MAJ5B6/e7Dh0f1VA==}
+  '@merely-ui/react@1.1.9':
+    resolution: {integrity: sha512-WpxicchMvKYW3m33B4YdeeUXOi5TXMzDrngfSVIOxuHFCgsIdD8rVj0kAWd6TrNhfkqygj/EQQ94BbERe+3ysg==}
     peerDependencies:
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -1994,7 +1994,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@merely-ui/react@1.0.7(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@merely-ui/react@1.1.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@emotion/css': 11.13.0
       react: 18.3.1
