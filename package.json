@@ -6,7 +6,8 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"generate:page": "node ./scripts/generate-slice/index.js"
 	},
 	"dependencies": {
 		"@merely-ui/react": "^1.1.9",
