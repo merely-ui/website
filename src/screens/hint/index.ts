@@ -1,0 +1,1 @@
+export { default as HintPage } from './ui/HintPage'

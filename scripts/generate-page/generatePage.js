@@ -22,7 +22,7 @@ module.exports = async pageName => {
 		try {
 			await fs.writeFile(
 				resolveRoot('src', 'screens', pageName, 'index.ts'),
-				`export { default as ${componentName} } from './ui/${componentName}/${componentName}'`
+				`export { default as ${componentName} } from './ui/${componentName}'`
 			)
 		} catch (err) {
 			console.log('⛔ Can`t create a Public API!')
