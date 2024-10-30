@@ -25,6 +25,7 @@ export default function Header() {
 				<Flex
 					as='header'
 					justifyContent='space-between'
+					gap={24}
 					alignItems='center'
 					py={20}
 				>

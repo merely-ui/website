@@ -46,8 +46,8 @@ function Logo() {
 					y2='61.1'
 					gradientUnits='userSpaceOnUse'
 				>
-					<stop stop-color='#8E8E8C' />
-					<stop offset='1' stop-color='#292929' />
+					<stop stopColor='#8E8E8C' />
+					<stop offset='1' stopColor='#292929' />
 				</linearGradient>
 			</defs>
 		</svg>

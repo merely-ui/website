@@ -17,7 +17,7 @@ export default function Sidebar() {
 	const pathname = usePathname()
 
 	return (
-		<Flex flexDir='column' justifySelf='end'>
+		<Flex flexDir='column' justifySelf='end' className='hidden lg:block'>
 			<Flex pos='sticky' top={125} flexDir='column' gap={16}>
 				<Flex alignItems='center' mb={8}>
 					<Card

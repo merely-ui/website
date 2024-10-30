@@ -9,7 +9,9 @@ function SearchBar() {
 	return (
 		<Button
 			variant='clear'
-			w={572}
+			maxW={572}
+			flexShrink={0}
+			flexGrow={1}
 			h={24}
 			px={18}
 			py={9}

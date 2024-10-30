@@ -13,7 +13,8 @@ export default function DocsPage({ children, sidebarTitles }: DocsPageProps) {
 	return (
 		<Grid
 			justifyContent='space-between'
-			gridTemplateColumns={'169px 610px 224px'}
+			gridTemplateColumns={'169px minmax(300px,610px) 224px'}
+			columnGap={24}
 			mt={125}
 		>
 			<Sidebar />

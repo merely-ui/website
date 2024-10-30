@@ -7,10 +7,10 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"generate:page": "node ./scripts/generate-slice/index.js"
+		"generate:page": "node ./scripts/generate-page/index.js"
 	},
 	"dependencies": {
-		"@merely-ui/react": "^1.1.9",
+		"@merely-ui/react": "^1.1.11",
 		"next": "14.2.5",
 		"react": "^18",
 		"react-dom": "^18"
