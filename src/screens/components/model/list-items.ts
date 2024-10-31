@@ -65,10 +65,10 @@ export const dataDisplayComponents: ComponentsList[] = [
 		link: '/components/tag',
 		text: 'Tag',
 	},
-	{
-		link: '/components/avatar',
-		text: 'Avatar',
-	},
+	// {
+	// 	link: '/components/avatar',
+	// 	text: 'Avatar',
+	// },
 ]
 
 export const typographyComponents: ComponentsList[] = [
