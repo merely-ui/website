@@ -20,7 +20,7 @@ export default function AvatarPage() {
 				The Button element represents a clickable button used to trigger actions
 				or submit forms.
 			</Text>
-			<Title scrollMarginTop={150} id='import' size='2xl' mb={12} mt={32}>
+			<Title scrollMarginTop={125} id='import' size='2xl' mb={12} mt={32}>
 				Import
 			</Title>
 			<ShikiCodeBlock code={ImportCode} />

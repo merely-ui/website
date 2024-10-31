@@ -20,7 +20,7 @@ export default function ComponentsPage() {
 		<DocsPage sidebarTitles={sidebarTitles}>
 			<Title
 				id='components'
-				scrollMarginTop={150}
+				scrollMarginTop={125}
 				fontSize={30}
 				fontWeight={700}
 				mb={12}

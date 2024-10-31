@@ -28,7 +28,7 @@ export default function FlexPage() {
 				Flex is a component that allows you to easily manipulate elements in one
 				of the axes
 			</Text>
-			<Title scrollMarginTop={150} id='import' size='2xl' mb={12} mt={32}>
+			<Title scrollMarginTop={125} id='import' size='2xl' mb={12} mt={32}>
 				Import
 			</Title>
 			<ShikiCodeBlock code={ImportCode} />
