@@ -36,7 +36,6 @@ export default function ButtonPage() {
 				Import
 			</Title>
 			<ShikiCodeBlock code={ImportCode} />
-			{/* <ShikiCodeBlock code={MerelyProviderCode} /> */}
 			<Title id='usage' size='2xl' mb={12} mt={32}>
 				Usage
 			</Title>
